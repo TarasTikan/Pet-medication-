@@ -4,54 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Tinos&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <button type="button">bum</button>
+    <header class="header-section">
+      <button type="button" class="category">bum</button>
       <a href="">Koala</a>
-      <button type="button">Search for products</button>
-      <nav>
-        <ul>
-          <li><a href="">How It Works</a></li>
-          <li><a href="">Sign In</a></li>
+      <button type="button" class="header-searh">Search for products</button>
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-item"><a href="" class="header-link">How It Works</a></li>
+          <li class="header-item"><a href="" class="header-link">Sign In</a></li>
         </ul>
       </nav>
-      <div>0</div>
+      <div class="number">0</div>
     </header>
     <main>
-      <section>
-        <img src="./img/human-dog.jpg" alt="human to keep a dog" />
-        <h1>Pet medication made easy.</h1>
-        <p>
+      <section class="main-section">
+        <img src="./img/human-dog.jpg" alt="human to keep a dog" width="640" height="800" class="main-img"/>
+        <h1 class="main-title">Pet medication made easy.</h1>
+        <p class="main-description">
           Koala has all the medications and health products your pet needs. We
           package them by date and time to make pet care simpler. The best part?
           There are no service or shipping fees — you only pay for what your pet
           needs.
         </p>
-        <button type="button">Shop for your pet</button>
+        <button type="button" class="main-shop">Shop for your pet</button>
       </section>
-      <section>
-        <div>
-            <h1>All their meds, sorted and delivered. We will:</h1>
-            <ul>
-                <li>
-                    <p>1</p>
-                    <p>Verify & fetch</p>
+      <section class="meds">
+        <div class="meds-wrap">
+            <h1 class="meds-title">All their meds, sorted and delivered. We will:</h1>
+            <ul class="meds-list">
+                <li class="meds-item">
+                    <p class="meds-number">1</p>
+                    <p class="meds-deskr">Verify & fetch</p>
                 </li>
-                <li>
-                    <p>2</p>
-                    <p>Sort & package</p>
+                <li class="meds-item">
+                    <p class="meds-number">2</p>
+                    <p class="meds-deskr">Sort & package</p>
                 </li>
-                <li>
-                    <p>3</p>
-                    <p>Deliver and refill</p>
+                <li class="meds-item">
+                    <p class="meds-number">3</p>
+                    <p class="meds-deskr">Deliver and refill</p>
                 </li>
             </ul>
-            <a href="">See how it works</a>
+            <a href="" target="_blank" rel="noreferrer noopener">See how it works</a>
         </div>
-        <div><img src="./img/pils.png" alt="how using pils"></div>
+        <div class="meds-wrap"><img src="./img/pils.png" alt="how using pils" width="593" height="438"></div>
       </section>
     </main>
   </body>
