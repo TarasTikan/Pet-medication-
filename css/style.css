@@ -1,3 +1,152 @@
+:root{
+    --main-color: #0E2D22;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
 body{
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
+    background-color: #F4F1ED;
+}
+
+ul{
+    list-style: none;
+}
+
+.header-searh {
+    font-family: 'Tinos';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: calc(24/16);
+color: #0E2D22;
+/* box-sizing: border-box; */
+
+width: 227px;
+height: 40px;
+
+
+background: #FFFFFF;
+border: 1px solid #D1DBD6;
+border-radius: 1000px;
+}
+
+.header-link {
+    font-family: 'Tinos';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: calc(20/16);
+color:  var(--main-color);
+text-decoration: none;
+}
+
+.number{
+    font-family: 'Tinos';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: calc(16/16);
+text-align: center;
+color: #F4F1ED;
+background: var(--main-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 1000px;
+width: 44px;
+padding-top: 3px;
+padding-bottom: 7px;
+}
+
+.main-section {
+}
+
+.main-img {
+}
+
+.main-title {
+    font-weight: 400;
+font-size: 66px;
+line-height: calc(69/66);
+letter-spacing: 1.72235px;
+color: var(--main-color);
+width: 419px;
+}
+
+.main-description {
+    font-family: 'Tinos';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: calc(24/16);
+color: var(--main-color);
+width: 419px;
+}
+
+.main-shop {
+    font-family: 'Tinos';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: calc(24/16);
+text-align: center;
+width: 232px;
+height: 40px;
+background: var(--main-color);
+border-radius: 1000px;
+color: #CBDDBF;
+}
+
+/* ddddddddddddddddddddddddddddddddddddddddddddddddddddddd */
+.meds {
+}
+.meds-wrap {
+}
+.meds-title {
+    font-weight: 400;
+font-size: 44px;
+line-height: calc(53/44);
+letter-spacing: 0.960471px;
+color: var(--main-color);
+width: 359px;
+}
+.meds-list {
+}
+.meds-item {
+}
+.meds-number {
+}
+.meds-deskr {
+    font-family: 'Tinos';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: calc(20/16);
+color: var(--main-color);
+}
+
+.meds-pre-descr{
+    font-family: 'Tinos';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: calc(20/16);
+color:var(--main-color);
 }
