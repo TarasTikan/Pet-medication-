@@ -33,6 +33,10 @@ ul{
 
 .header {
     padding-top: 30px;
+    position: absolute;
+width: 100%;
+z-index: 10;
+
 }
 
 .header .container {
@@ -50,7 +54,7 @@ align-items: center;
     gap: 25px;
 } */
 .logo {
-    margin-left: 15px;
+    margin-left: 10px;
     margin-right: auto;
 }
 .header-searh {
@@ -65,6 +69,14 @@ height: 40px;
 background: #FFFFFF;
 border: 1px solid #D1DBD6;
 border-radius: 1000px;
+}
+
+.header-menu {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: transparent;
+border: none;
 }
 
 .header-list {
@@ -112,9 +124,12 @@ margin-left: 25px;
 
 .main-wrap {
     margin-top: 160px;
-    margin-left: 70px;
+    margin-left: 55px;
 }
 .main-img {
+    position: relative;
+    top: 0px;
+    right: 15px;
 }
 
 .main-title {
@@ -162,7 +177,7 @@ color: #CBDDBF;
 }
 
 .meds-wrap {
-    margin-left: 64px;
+    margin-left: 132px;
 }
 
 .meds-title {
@@ -224,4 +239,8 @@ line-height: calc(20/16);
 color:var(--main-color);
 text-decoration: none;
 border-bottom: 2px solid #9FABA7;;
+}
+
+.img-pils{
+    margin-left: 64px;
 }
