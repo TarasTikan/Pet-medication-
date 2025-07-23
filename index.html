@@ -1,71 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Tinos&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/main.min.css">
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-      <button type="button" class="header-menu"><svg class="header-menu-icon"  width="30" height="30"><use href="./img/symbol-defs.svg#icon-menu"></use></svg></button>
-      <a href="" class="logo"><img src="./img/Vector.svg" alt="logo"></a>
-      <button type="button" class="header-searh">Search for products</button>
-      <nav class="header-nav">
-        <ul class="header-list">
-          <li class="header-item"><a href="" class="header-link">How It Works</a></li>
-          <li class="header-item"><a href="" class="header-link">Sign In</a></li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo"><svg class="icon-search" width="94" height="44">
+            <use href="./img/icons.svg#icon-logo"></use>
+          </svg></a>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-items"><a href="/" class="nav-link">home</a></li>
+          <li class="nav-items"><a href="/" class="nav-link">Shop</a></li>
+          <li class="nav-items"><a href="/" class="nav-link">blog</a></li>
+          <li class="nav-items"><a href="/" class="nav-link">Sale</a></li>
+          <li class="nav-items">
+            <a href="/" class="nav-link">contact us</a>
+          </li>
+          <li class="nav-items">
+            <a href="/" class="nav-link"> <svg class="icon-search" width="16" height="16">
+                <use href="./img/icons.svg#icon-search"></use>
+              </svg>search</a>
+          </li>
         </ul>
       </nav>
-      <div class="number">0</div>
+      <ul class="list-auth">
+        <li><a href="/" class="link-auth">SIGN IN</a></li>
+        <li><a href="/" class="link-auth">CREATE AN ACCOUNT</a></li>
+      </ul>
+      <ul class="list-base">
+        <li class="base-shop">
+          <svg class="icon-search" width="16" height="16">
+            <use href="./img/icons.svg#icon-heart"></use>
+          </svg>
+        </li>
+        <li class="base-shop">
+          <svg class="icon-search" width="16" height="16">
+            <use href="./img/icons.svg#icon-base"></use>
+          </svg>
+        </li>
+        <li class="base-shop">
+          <p class="base-shop-text">Shopping Cart</p>
+          <p class="base-price-text">0,00 EUR</p>
+        </li>
+      </ul>
     </div>
-    </header>
-    <main>
-      <section class="main-section">
-        <div class="container">
-        <img src="./img/human-dog.jpg" alt="human to keep a dog" width="640" height="800" class="main-img"/>
-        <div class="main-wrap">
-        <h1 class="main-title">Pet medication made easy.</h1>
-        <p class="main-description">
-          Koala has all the medications and health products your pet needs. We
-          package them by date and time to make pet care simpler. The best part?
-          There are no service or shipping fees — you only pay for what your pet
-          needs.
-        </p>
-        <button type="button" class="main-shop">Shop for your pet</button>
-      </div>
-      </div>
-      </section>
-      <section class="meds">
-        <div class="container">
-        <div class="meds-wrap">
-            <h1 class="meds-title">All their meds, sorted and delivered. We will:</h1>
-            <ul class="meds-list">
-                <li class="meds-item">
-                    <p class="meds-number">1</p>
-                    <p class="meds-deskr">Verify & fetch</p>
-                </li>
-                <li class="meds-item">
-                    <p class="meds-number">2</p>
-                    <p class="meds-deskr">Sort & package</p>
-                </li>
-                <li class="meds-item">
-                    <p class="meds-number">3</p>
-                    <p class="meds-deskr">Deliver and refill</p>
-                </li>
-            </ul>
-            <a href="" target="_blank" rel="noreferrer noopener" class="meds-pre-descr">See how it works</a>
-        </div>
-        <img src="./img/pils.png" class ='img-pils' alt="how using pils" width="593" height="438">
-      </div>
-      </section>
-    </main>
-  </body>
+  </header>
+</body>
+
 </html>
