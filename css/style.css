@@ -36,13 +36,13 @@ body {
 .header .container {
   display: flex;
   align-items: center;
-  width: 1880px;
+  width: 100%;
   padding: 0px 21px;
   margin: 0 auto;
 }
 
 .logo {
-  margin-right: 617px;
+  margin-right: auto;
 }
 
 .nav-list {
@@ -164,13 +164,13 @@ body {
 /* ----------------Hero-------------- */
 
 .hero {
-  width: 1878px;
+  width: 100%;
   padding-top: 204px;
   padding-bottom: 204px;
   background-color: white;
   background-image: url('/img/bg-hero.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   margin: 0 auto;
 }
@@ -288,7 +288,7 @@ body {
 }
 
 .brand .container {
-  width: 1878px;
+  width: 100%;
   padding-left: 21px;
   padding-right: 21px;
   margin: 0 auto;
@@ -308,6 +308,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 35px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .brand-title {
@@ -332,4 +334,108 @@ transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1)
 
 .brand-icon:hover {
 fill: rgb(240, 242, 242);
+}
+
+
+/* ------catalog---- */
+.catalog .container{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.container-catalog-one {
+  width: 100%;
+  height: 434px;
+  background-color: rgb(241, 239, 240);
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-catalog {
+  color: rgb(0, 0, 0);
+font-family: Oswald;
+font-size: 48px;
+font-weight: 600;
+line-height: 62px;
+letter-spacing: 0%;
+text-transform: uppercase;
+width: 221px;
+margin-bottom: 7px;
+}
+
+.describe-catalog {
+  color: rgb(0, 0, 0);
+font-family: Roboto Light;
+font-size: 22px;
+font-weight: 400;
+line-height: 37px;
+letter-spacing: 1%;
+margin-bottom: 51px;
+}
+
+.catalog-btn {
+color: rgb(0, 0, 0);
+font-family: Oswald;
+font-size: 18px;
+font-weight: 500;
+line-height: 27px;
+letter-spacing: 0.5px;
+border: 2px solid rgb(0, 0, 0);
+width: 175px;
+height: 56px;
+text-transform: uppercase;
+background-color: transparent;
+}
+
+.catalog-text {
+margin-top: 82px;
+  margin-left: 112px;
+  margin-right: auto;
+  margin-bottom: 77px;
+}
+
+.container-catalog-two {
+  width: 100%;
+  background-color: rgb(247, 224, 213);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 30px;
+}
+
+.title-catalog-two{
+  color: rgb(0, 0, 0);
+font-family: Oswald;
+font-size: 48px;
+font-weight: 600;
+line-height: 62px;
+letter-spacing: 0%;
+text-transform: uppercase;
+margin-bottom: 7px;
+}
+
+.catalog-text-two {
+  padding-top: 115px;
+  padding-left: 94px;
+  padding-bottom: 115px;
+}
+
+.container-catalog-three {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: rgb(224, 222, 211);
+  height: 100%;
+}
+
+.catalog-text-three {
+  /* margin-top: 430px;
+  margin-left: 94px;
+  margin-right: auto;
+  margin-bottom: 103px; */
+}
+
+.catalog-img-two {
+  margin-top: auto;
 }
