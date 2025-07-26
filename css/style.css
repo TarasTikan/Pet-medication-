@@ -160,3 +160,176 @@ body {
   flex-direction: column;
   align-items: start;
 }
+
+/* ----------------Hero-------------- */
+
+.hero {
+  width: 1878px;
+  padding-top: 204px;
+  padding-bottom: 204px;
+  background-color: white;
+  background-image: url('/img/bg-hero.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.hero .container {
+  width: 1430px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.container-text {
+  width: 504px;
+  position: relative;
+  margin-right: 109px;
+}
+
+.hero-title {
+  color: rgb(0, 0, 0);
+  font-family: Oswald;
+  font-size: 86px;
+  font-weight: 600;
+  line-height: 96px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  color: rgb(0, 0, 0);
+  font-family: Oswald;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  width: 175px;
+  height: 56px;
+  background-color: transparent;
+  margin-top: 48px;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), border-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover {
+  background-color: rgb(0, 0, 0);
+  border-color: transparent;
+  color: white;
+}
+
+.title-span {
+  color: transparent;
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+
+.container-text::before,
+.container-text::after {
+  content: "";
+  position: absolute;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container-text::before {
+  top: -21px;
+  width: 100%;
+  right: -41px;
+  border-bottom: none;
+  border-left: none;
+}
+
+/* Вертикальна лінія праворуч */
+.container-text::after {
+  top: -21px;
+  right: -41px;
+  height: 100px;
+  border-top: none;
+  border-left: none;
+}
+
+.hero-container-img {
+  display: flex;
+  position: relative;
+}
+
+.hero-img-one {
+  position: absolute;
+  top: -130px;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.hero-img-one:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.hero-img-two {
+  position: absolute;
+  left: 330px;
+  top: -130px;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-img-two:hover {
+  transform: scale(1.2);
+}
+
+/* ------------Brand------------------- */
+
+.brand {
+  padding-top: 44px;
+  padding-bottom: 30px;
+}
+
+.brand .container {
+  width: 1878px;
+  padding-left: 21px;
+  padding-right: 21px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  border: 2px solid rgb(196, 196, 196);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.brand-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.brand-title {
+  color: rgb(0, 0, 0);
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 68px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 171px;
+  background-color: white;
+  padding-left: 115px;
+  padding-right: 115px;
+  text-align: center;
+}
+
+.brand-icon {
+fill: rgb(255, 255, 255);
+transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.brand-icon:hover {
+fill: rgb(240, 242, 242);
+}
