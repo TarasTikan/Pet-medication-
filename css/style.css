@@ -612,8 +612,8 @@ body {
   display: flex;
   align-items: center;
   padding-left: 21px;
-   padding-right: 21px;
-   flex-direction: column;
+  padding-right: 21px;
+  flex-direction: column;
 }
 
 .blog-container {
@@ -675,88 +675,103 @@ body {
 }
 
 .blog-title-section {
-color: rgb(0, 0, 0);
-font-family: Oswald;
-font-size: 24px;
-font-weight: 400;
-line-height: 68px;
-letter-spacing: 0%;
-text-align: left;
-margin-bottom: 30px;
-margin-right: auto;
+  color: rgb(0, 0, 0);
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 68px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 30px;
+  margin-right: auto;
 }
+
 /* ------------------------footer----------------- */
 .footer {
   padding-top: 65px;
-  padding-bottom: 192px;
   background-color: Black;
+  padding-bottom: 40px;
 }
+
 .footer .container {
-display: flex;
-/* gap: 170px; */
-width: 100%;
-max-width: 1878px;
-padding-left: 21px;
-padding-right: 21px;
-justify-content: space-between;
+  display: flex;
+  width: 100%;
+  max-width: 1878px;
+  padding-left: 21px;
+  padding-right: 21px;
+  flex-direction: column;
+}
+
+.wrap-info-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 140px;
 }
 
 .footer-wrap {
-display: flex;
-flex-direction: column;
-align-items: start;
-gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
 }
 
 .addres-wrap {
-display: flex;
-flex-direction: column;
-align-items: start;
-gap: 30px;
-font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+  font-style: normal;
 }
 
 .footer-title {
   color: rgb(255, 255, 255);
-font-family: Oswald;
-font-size: 18px;
-font-weight: 600;
-line-height: 27px;
-letter-spacing: 0%;
-text-transform: uppercase;
+  font-family: Oswald;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-transform: uppercase;
 }
 
 .footer-text {
   color: rgb(130, 130, 130);
-font-family: Roboto Medium;
-font-size: 13px;
-font-weight: 400;
-line-height: 20px;
-letter-spacing: 0%;
-text-align: left;
-text-transform: uppercase;
+  font-family: Roboto Medium;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    cursor 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-text:hover,
+.footer-text:active {
+  color: white;
+  cursor: pointer;
 }
 
 .contact-title {
   color: rgb(255, 255, 255);
-font-family: Oswald;
-font-size: 12px;
-font-weight: 500;
-line-height: 20px;
-letter-spacing: 0%;
-text-align: left;
-text-transform: uppercase;
+  font-family: Oswald;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .contact-text {
   color: rgb(130, 130, 130);
-font-family: Roboto Medium;
-font-size: 12px;
-font-weight: 400;
-line-height: 20px;
-letter-spacing: 0%;
-text-align: left;
-text-transform: uppercase;
+  font-family: Roboto Medium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .list-features {
@@ -766,62 +781,141 @@ text-transform: uppercase;
 }
 
 .list-contact {
-   display: flex;
+  display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .list-soc {
   display: flex;
   flex-direction: column;
   gap: 25px
 }
+
 .soc-text {
   color: rgb(130, 130, 130);
-font-family: Roboto Medium;
-font-size: 13px;
-font-weight: 400;
-line-height: 20px;
-letter-spacing: 0%;
-text-decoration: none;
-text-transform: uppercase;
-display: flex;
-align-items: center;
+  font-family: Roboto Medium;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soc-text:hover {
+  color: white;
 }
 
 .soc-icon {
   margin-right: 20px;
 }
 
-.footer-input {
+.form-footer {
   display: flex;
   flex-direction: column;
 }
 
 .btn-join {
   color: rgb(63, 63, 63);
-font-family: Oswald;
-font-size: 14px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0%;
-text-align: center;
-text-transform: uppercase;
-width: 280px;
-height: 40px;
-background-color: white;
-margin-top: 7px;
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  width: 280px;
+  height: 40px;
+  background-color: white;
+  margin-top: 7px;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    cursor 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.btn-join:hover {
+  border: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+
 .form-input {
-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  background: rgb(0, 0, 0);
+  margin-top: 10px;
+  width: 280px;
+  height: 40px;
+  padding-left: 15px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.form-label {
+  color: rgb(130, 130, 130);
+  font-family: Roboto Medium;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    cursor 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label:focus-within,
+.form-label:hover {
+  color: white;
+}
+
+.text-date-crisp {
+  color: rgb(255, 255, 255);
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 27px;
+  text-transform: uppercase;
+  margin-top: auto;
+border-top: 1px solid rgb(79, 79, 79);
+padding-top: 14px;
+}
+
+
+
+/* ------------------------------account------------------------------------ */
+
+.account-hero {
+padding-top: 20px;
+}
+
+.account-text {
+  color: rgb(130, 130, 130);
 font-family: Roboto;
-font-size: 12px;
+font-size: 14px;
 font-weight: 400;
 line-height: 20px;
-background: rgb(0, 0, 0);
-margin-top: 10px;
-width: 280px;
-height: 40px;
-padding-left: 15px;
-border: 1px solid rgb(255, 255, 255);
+text-align: center;
+margin-bottom: 30px;
+}
+
+.account-title {
+  color: rgb(0, 0, 0);
+font-family: Oswald;
+font-size: 48px;
+font-weight: 400;
+line-height: 50px;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 30px;
 }

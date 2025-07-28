@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <svg class="icon-search" width="94" height="44">
+                    <use href="./img/icons.svg#icon-logo"></use>
+                </svg>
+            </a>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-items"><a href="/" class="nav-link">home</a></li>
+                    <li class="nav-items"><a href="/" class="nav-link">Shop</a></li>
+                    <li class="nav-items"><a href="/" class="nav-link">blog</a></li>
+                    <li class="nav-items"><a href="/" class="nav-link">Sale</a></li>
+                    <li class="nav-items">
+                        <a href="/" class="nav-link">contact us</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="/" class="nav-link">
+                            <svg class="icon-search" width="16" height="16">
+                                <use href="./img/icons.svg#icon-search"></use>
+                            </svg>search</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="list-auth">
+                <li><a href="/" class="link-auth">SIGN IN</a></li>
+                <li><a href="/" class="link-auth">CREATE AN ACCOUNT</a></li>
+            </ul>
+            <ul class="list-base">
+                <li class="base-shop">
+                    <svg class="icon-search" width="16" height="16">
+                        <use href="./img/icons.svg#icon-heart"></use>
+                    </svg>
+                </li>
+                <li class="base-shop">
+                    <svg class="icon-search" width="16" height="16">
+                        <use href="./img/icons.svg#icon-base"></use>
+                    </svg>
+                </li>
+                <li class="base-shop">
+                    <p class="base-shop-text">Shopping Cart</p>
+                    <p class="base-price-text">0,00 EUR</p>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="account-hero">
+            <div class="container">
+                <div class="wrap-title">
+                    <p class="account-text">Home / Create New Customer Account</p>
+                    <h1 class="account-title">Create New Customer Account</h1>
+                </div>
+                <form>
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label>
+                            First name *
+                            <input type="text" name="first name" />
+                        </label>
+                        <label>
+                            Last Name *
+                            <input type="text" name="last name" />
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Sign Up for Newsletter</legend>
+                        <label>
+                            Email  *
+                            <input type="email" name="email" />
+                        </label>
+                        <label>
+                            Password  *
+                            <input type="password" name="password" />
+                        </label>
+                         <label>
+                            Confirm Password  *
+                            <input type="password" name="password" />
+                        </label>
+                    </fieldset>
+                    <button type="button">create an account</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
