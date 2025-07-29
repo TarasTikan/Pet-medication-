@@ -9,7 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
 </head>
 
@@ -67,38 +67,155 @@
                     <p class="account-text">Home / Create New Customer Account</p>
                     <h1 class="account-title">Create New Customer Account</h1>
                 </div>
-                <form>
-                    <fieldset>
-                        <legend>Personal Information</legend>
-                        <label>
-                            First name *
-                            <input type="text" name="first name" />
+                <form class="form">
+                    <fieldset class="form-group">
+                        <legend class="group-title">Personal Information</legend>
+                        <label class="form-label-reg">
+                            First name <span class="span-label">*</span>
+                            <input type="text" name="first name" class="input-name" placeholder="first name" required />
                         </label>
-                        <label>
-                            Last Name *
-                            <input type="text" name="last name" />
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Sign Up for Newsletter</legend>
-                        <label>
-                            Email  *
-                            <input type="email" name="email" />
-                        </label>
-                        <label>
-                            Password  *
-                            <input type="password" name="password" />
-                        </label>
-                         <label>
-                            Confirm Password  *
-                            <input type="password" name="password" />
+                        <label class="form-label-reg">
+                            Last Name <span class="span-label">*</span>
+                            <input type="text" name="last name" class="input-name" placeholder="last name" required />
                         </label>
                     </fieldset>
-                    <button type="button">create an account</button>
+                    <fieldset class="form-group">
+                        <legend class="group-title">Sign Up for Newsletter</legend>
+                        <label class="form-label-reg">
+                            Email <span class="span-label">*</span>
+                            <input type="email" name="email" class="input-name" placeholder="email" required />
+                        </label>
+                        <label class="form-label-reg">
+                            Password <span class="span-label">*</span>
+                            <input type="password" name="password" class="input-name" placeholder="password" required />
+                        </label>
+                        <label class="form-label-password">
+                            Confirm Password <span class="span-label">*</span>
+                            <input type="password" name="password" class="input-name" placeholder="password" required />
+                        </label>
+                    </fieldset>
+                    <div class="wrap-btn-form">
+                        <button type="button" class="btn-form">create an account</button>
+                        <a href="/" class="link-back">back</a>
+                    </div>
                 </form>
             </div>
         </section>
     </main>
+      <footer class="footer">
+    <div class="container">
+      <div class="wrap-info-footer">
+        <a href="/">
+          <svg width="102" height="44">
+            <use href="./img/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <div class="footer-wrap">
+          <p class="footer-title">features</p>
+          <ul class="list-features">
+            <li class="menu-list-item">
+              <p class="footer-text">men</p>
+            </li>
+            <li class="menu-list-item">
+              <p class="footer-text">Women</p>
+            </li>
+            <li class="menu-list-item">
+              <p class="footer-text">boys</p>
+            </li>
+            <li class="menu-list-item">
+              <p class="footer-text">girls</p>
+            </li>
+            <li class="menu-list-item">
+              <p class="footer-text">new arrivals</p>
+            </li>
+            <li class="menu-list-item">
+              <p class="footer-text">shoes</p>
+            </li>
+            <li class="menu-list-item">
+              <p class="footer-text">cothes</p>
+            </li>
+            <li class="menu-list-item">
+              <p class="footer-text">accessories</p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-wrap">
+          <p class="footer-title">menu</p>
+          <ul class="list-features">
+            <li class="menu-list-item">
+              <p class="footer-text">About us</p>
+            </li>
+            <li class="menu-list-item">
+              <p class="footer-text">contact us</p>
+            </li>
+            <li class="menu-list-item">
+              <p class="footer-text">my account</p>
+            </li>
+            <li class="menu-list-item">
+              <p class="footer-text">orders history</p>
+            </li>
+            <li class="menu-list-item">
+              <p class="footer-text">MY WISHLIST</p>
+            </li>
+            <li class="menu-list-item">
+              <p class="footer-text">BLOG</p>
+            </li>
+            <li class="menu-list-item">
+              <p class="footer-text">LOGIN</p>
+            </li>
+          </ul>
+        </div>
+        <address class="addres-wrap">
+          <p class="footer-title">contact us</p>
+          <ul class="list-contact">
+            <li class="contact-item">
+              <p class="contact-title">Address:</p>
+              <p class="contact-text">123 STREET NAME, CITY, ENGLAND</p>
+            </li>
+            <li class="contact-item">
+              <p class="contact-title">Phone:</p>
+              <p class="contact-text">(123) 456-7890</p>
+            </li>
+            <li class="contact-item">
+              <p class="contact-title">email:</p>
+              <p class="contact-text">MAIL@EXAMPLE.COM</p>
+            </li>
+            <li class="contact-item">
+              <p class="contact-title">working days/hours</p>
+              <p class="contact-text">MON - SUN / 9:00AM - 8:00PM</p>
+            </li>
+          </ul>
+        </address>
+        <div class="footer-wrap">
+          <p class="footer-title">follow us</p>
+          <ul class="list-soc">
+            <li class="soc-iteam"><a href="/" class="soc-text"> <svg width="21" height="21" class="soc-icon">
+                  <use href="./img/soc-icons.svg#icon-facebook"></use>
+                </svg>Facebook</a></li>
+            <li class="soc-iteam"><a href="/" class="soc-text"><svg width="21" height="21" class="soc-icon">
+                  <use href="./img/soc-icons.svg#icon-twitter"></use>
+                </svg>twitter</a></li>
+            <li class="soc-iteam"><a href="/" class="soc-text"><svg width="21" height="21" class="soc-icon">
+                  <use href="./img/soc-icons.svg#icon-instagram"></use>
+                </svg>instagram</a></li>
+          </ul>
+        </div>
+        <div class="footer-wrap">
+          <h1 class="footer-title">join us</h1>
+          <form name="Subscribe" autocomplete="on" novalidate class="form-footer">
+            <label class="form-label">
+              Subscribe to our newsletters
+              <input type="text" class="form-input" name="user-email" placeholder="Email Address" />
+            </label>
+            <button type="submit" class="btn-join">Subscribe!</button>
+          </form>
+        </div>
+      </div>
+      <p class="text-date-crisp">
+        © 2019. Crisp theme Developed by Belvg
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>
