@@ -1,15 +1,16 @@
 .catalog {
   padding-bottom: 30px;
-}
 
-.catalog .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
 }
 
 .container-catalog-one {
@@ -20,13 +21,14 @@
   justify-content: space-between;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
-.container-catalog-one:hover {
-  transform: scale(1.03);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
 .container-catalog-two {
   width: 710px;
@@ -38,13 +40,14 @@
   margin-top: 20px;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
-.container-catalog-two:hover {
-  transform: scale(1.03);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
 .container-catalog-three {
   margin-left: 20px;
@@ -55,13 +58,15 @@
   width: 710px;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
-.container-catalog-three:hover {
-  transform: scale(1.03);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 
 .catalog-img-one {
   width: 430px;
@@ -106,14 +111,16 @@
     border-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
     color 300ms cubic-bezier(0.4, 0, 0.2, 1),
     cursor 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: rgb(0, 0, 0);
+    border: transparent;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
 }
 
-.catalog-btn:hover {
-  background-color: rgb(0, 0, 0);
-  border: transparent;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-}
+
 
 .catalog-text {
   padding-top: 140px;

@@ -7,32 +7,27 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
 
-.hero .container {
-  width: 1430px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  display: flex;
-  margin: 0 auto;
-}
 
-.container-text {
-  width: 504px;
-  position: relative;
-  margin-right: 109px;
-}
+  .container {
+    width: 1430px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: flex;
+    margin: 0 auto;
+  }
 
-.hero-title {
-  color: rgb(0, 0, 0);
-  font-family: Oswald;
-  font-size: 86px;
-  font-weight: 600;
-  line-height: 96px;
-  letter-spacing: 0%;
-  text-align: left;
-  text-transform: uppercase;
+  &-title {
+    color: rgb(0, 0, 0);
+    font-family: Oswald;
+    font-size: 86px;
+    font-weight: 600;
+    line-height: 96px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+  }
 }
 
 .hero-btn {
@@ -54,13 +49,14 @@
     border-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
     color 300ms cubic-bezier(0.4, 0, 0.2, 1),
     cursor 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.hero-btn:hover {
-  background-color: rgb(0, 0, 0);
-  border-color: transparent;
-  color: white;
-  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(0, 0, 0);
+    border-color: transparent;
+    color: white;
+    cursor: pointer;
+  }
 }
 
 .title-span {
@@ -68,28 +64,34 @@
   -webkit-text-stroke: 2px rgb(0, 0, 0);
 }
 
-.container-text::before,
-.container-text::after {
-  content: "";
-  position: absolute;
-  border: 2px solid rgb(0, 0, 0);
-}
+.container-text {
+  width: 504px;
+  position: relative;
+  margin-right: 109px;
 
-.container-text::before {
-  top: -21px;
-  width: 100%;
-  right: -41px;
-  border-bottom: none;
-  border-left: none;
-}
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border: 2px solid rgb(0, 0, 0);
+  }
 
-/* Вертикальна лінія праворуч */
-.container-text::after {
-  top: -21px;
-  right: -41px;
-  height: 100px;
-  border-top: none;
-  border-left: none;
+  &::before {
+    top: -21px;
+    width: 100%;
+    right: -41px;
+    border-bottom: none;
+    border-left: none;
+  }
+
+  /* Вертикальна лінія праворуч */
+  &::after {
+    top: -21px;
+    right: -41px;
+    height: 100px;
+    border-top: none;
+    border-left: none;
+  }
 }
 
 .hero-container-img {
@@ -101,11 +103,11 @@
   position: absolute;
   top: -130px;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.hero-img-one:hover {
-  transform: scale(1.2);
-  z-index: 1;
+  &:hover {
+    transform: scale(1.2);
+    z-index: 1;
+  }
 }
 
 .hero-img-two {
@@ -113,8 +115,9 @@
   left: 330px;
   top: -130px;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.hero-img-two:hover {
-  transform: scale(1.2);
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
