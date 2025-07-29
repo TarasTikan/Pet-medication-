@@ -1,0 +1,90 @@
+.limits {
+  background-image: linear-gradient(90.00deg, rgb(221, 235, 241), rgb(211, 229, 238) 20.708%, rgb(200, 222, 236) 52.271%, rgba(255, 255, 255, 0) 100%), url('/img/limits-img.jpg');
+  background-position: center;
+  padding-top: 96px;
+  padding-bottom: 78px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.limits .container {
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-left: 21px;
+  padding-right: 21px;
+  margin: 0 auto;
+}
+
+.limits-title {
+  color: rgb(0, 0, 0);
+  font-family: Oswald;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.limits-title::before,
+.limits-title::after {
+  content: "";
+  position: absolute;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.limits-title::before {
+  top: -21px;
+  width: 375px;
+  right: -41px;
+  border-bottom: none;
+  border-left: none;
+}
+
+/* Вертикальна лінія праворуч */
+.limits-title::after {
+  top: -21px;
+  right: -41px;
+  height: 60px;
+  border-top: none;
+  border-left: none;
+}
+
+.limits-describe {
+  color: rgb(0, 0, 0);
+  font-family: Roboto Light;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 1%;
+  margin-top: 17px;
+  width: 389px;
+}
+
+.limits-btn {
+  color: rgb(0, 0, 0);
+  font-family: Oswald;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid rgb(0, 0, 0);
+  margin-top: 24px;
+  width: 110px;
+  height: 41px;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    cursor 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.limits-btn:hover {
+  background-color: rgb(0, 0, 0);
+  border: transparent;
+  color: white;
+  cursor: pointer;
+}

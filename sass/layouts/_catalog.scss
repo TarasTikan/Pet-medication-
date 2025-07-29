@@ -1,0 +1,165 @@
+.catalog {
+  padding-bottom: 30px;
+}
+
+.catalog .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.container-catalog-one {
+  height: 400px;
+  width: 710px;
+  background-color: rgb(241, 239, 240);
+  display: flex;
+  justify-content: space-between;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container-catalog-one:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.container-catalog-two {
+  width: 710px;
+  height: 365px;
+  background-color: rgb(247, 224, 213);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container-catalog-two:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.container-catalog-three {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: rgb(224, 222, 211);
+  height: 786px;
+  width: 710px;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container-catalog-three:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.catalog-img-one {
+  width: 430px;
+  height: 400px;
+  margin-top: auto;
+}
+
+.title-catalog {
+  color: rgb(0, 0, 0);
+  font-family: Oswald;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 40px;
+  text-transform: uppercase;
+  width: 221px;
+  margin-bottom: 7px;
+}
+
+.describe-catalog {
+  color: rgb(0, 0, 0);
+  font-family: Roboto Light;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: 1%;
+  margin-bottom: 31px;
+}
+
+.catalog-btn {
+  color: rgb(0, 0, 0);
+  font-family: Oswald;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0.5px;
+  border: 2px solid rgb(0, 0, 0);
+  width: 145px;
+  height: 50px;
+  text-transform: uppercase;
+  background-color: transparent;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    cursor 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.catalog-btn:hover {
+  background-color: rgb(0, 0, 0);
+  border: transparent;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.catalog-text {
+  padding-top: 140px;
+  padding-right: 70px;
+  padding-left: 24px;
+}
+
+.title-catalog-two {
+  color: rgb(0, 0, 0);
+  font-family: Oswald;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.catalog-text-two {
+  padding-top: 135px;
+  padding-left: 40px;
+}
+
+.catalog-img-two {
+  width: 377px;
+  height: 350px;
+  margin-top: auto;
+}
+
+.catalog-text-three {
+  padding-top: 430px;
+  padding-left: 50px;
+}
+
+.title-catalog-three {
+  color: rgb(0, 0, 0);
+  font-family: Oswald;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  width: 223px;
+}
+
+.catalog-img-three {
+  width: 430px;
+  height: 700px;
+  margin-top: auto;
+}
