@@ -21,6 +21,9 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 fieldset {
@@ -562,12 +565,42 @@ body {
   padding-right: 21px;
   flex-direction: column;
 }
+@media screen and (min-width: 480px) {
+  .blog .container {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .blog .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blog .container {
+    width: 1200px;
+  }
+}
 .blog-container {
   padding-top: 25px;
   padding-left: 25px;
   padding-right: 25px;
   background-color: white;
   text-align: start;
+}
+@media screen and (min-width: 480px) {
+  .blog-container {
+    width: 406px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .blog-container {
+    width: 348px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blog-container {
+    width: 267px;
+  }
 }
 .blog-title {
   color: rgb(0, 0, 0);
@@ -599,11 +632,22 @@ body {
 }
 .blog-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
   width: 100%;
   overflow: hidden;
+}
+@media screen and (min-width: 1200px) {
+  .blog-list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .blog-list {
+    flex-wrap: nowrap;
+  }
 }
 .blog-title-section {
   color: rgb(0, 0, 0);

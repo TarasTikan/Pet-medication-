@@ -12,6 +12,15 @@
   padding-left: 21px;
   padding-right: 21px;
   flex-direction: column;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+   @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+     @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 &-container {
@@ -20,6 +29,16 @@
   padding-right: 25px;
   background-color: white;
   text-align: start;
+ @media screen and (min-width: 480px) {
+    width: 406px;
+  }
+   @media screen and (min-width: 768px) {
+    width: 348px;
+  }
+   @media screen and (min-width: 1200px) {
+    width: 267px;
+  }
+  
 }
 
 &-title {
@@ -55,11 +74,20 @@
 
 &-list {
   display: flex;
+
+  flex-wrap: wrap;
+
   justify-content: center;
   align-items: center;
   gap: 30px;
   width: 100%;
   overflow: hidden;
+    @media screen and (min-width: 1200px) {
+    flex-wrap: wrap;
+  }
+    @media screen and (min-width: 1500px) {
+    flex-wrap: nowrap;
+  }
 }
 
 &-title-section {
