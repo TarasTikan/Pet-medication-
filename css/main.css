@@ -551,9 +551,15 @@ body {
 }
 
 .blog {
-  padding-top: 46px;
-  padding-bottom: 46px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   background: rgb(248, 249, 251);
+}
+@media screen and (min-width: 768px) {
+  .blog {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
 }
 .blog .container {
   width: 100%;
@@ -565,25 +571,20 @@ body {
   padding-right: 21px;
   flex-direction: column;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .blog .container {
     width: 450px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .blog .container {
     width: 768px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .blog .container {
-    width: 1200px;
-  }
-}
 .blog-container {
-  padding-top: 25px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: white;
   text-align: start;
 }
@@ -595,30 +596,46 @@ body {
 @media screen and (min-width: 768px) {
   .blog-container {
     width: 348px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 @media screen and (min-width: 1200px) {
   .blog-container {
-    width: 267px;
+    width: 100%;
   }
 }
 .blog-title {
   color: rgb(0, 0, 0);
   font-family: Oswald;
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 400;
-  line-height: 39px;
+  line-height: 27px;
   letter-spacing: 0%;
   margin-top: 21px;
+}
+@media screen and (min-width: 480px) {
+  .blog-title {
+    line-height: 39px;
+    font-size: 26px;
+  }
 }
 .blog-descrive {
   color: rgb(0, 0, 0);
   font-family: Roboto Light;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 22px;
   letter-spacing: 1%;
-  margin-top: 32px;
+  margin-top: 15px;
+}
+@media screen and (min-width: 480px) {
+  .blog-descrive {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 32px;
+  }
 }
 .blog-date {
   color: rgb(79, 79, 79);
@@ -641,11 +658,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .blog-list {
-    flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1500px) {
-  .blog-list {
     flex-wrap: nowrap;
   }
 }
@@ -654,11 +666,19 @@ body {
   font-family: Oswald;
   font-size: 24px;
   font-weight: 400;
-  line-height: 68px;
+  line-height: 40px;
   letter-spacing: 0%;
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .blog-title-section {
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: 0px;
+  }
 }
 
 .text-title {
