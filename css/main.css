@@ -330,8 +330,19 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .catalog .container {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 768px) {
   .catalog .container {
+    width: 587px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .catalog .container {
+    width: 100%;
     flex-direction: row;
   }
 }
@@ -422,45 +433,67 @@ body {
 .title-catalog {
   color: rgb(0, 0, 0);
   font-family: Oswald;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
-  line-height: 40px;
+  line-height: 30px;
   text-transform: uppercase;
-  width: 221px;
-  margin-bottom: 7px;
+  width: 230px;
+  margin-bottom: 17px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 480px) {
+  .title-catalog {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .title-catalog {
+    margin-bottom: 7px;
     margin-left: 0px;
     margin-right: 0px;
+    font-size: 40px;
+    line-height: 40px;
   }
 }
 
 .describe-catalog {
   color: rgb(0, 0, 0);
   font-family: Roboto Light;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 37px;
+  line-height: 20px;
   letter-spacing: 1%;
   margin-bottom: 31px;
+}
+@media screen and (min-width: 1200px) {
+  .describe-catalog {
+    font-size: 16px;
+    line-height: 37px;
+  }
 }
 
 .catalog-btn {
   color: rgb(0, 0, 0);
   font-family: Oswald;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 500;
-  line-height: 27px;
+  line-height: 20px;
   letter-spacing: 0.5px;
   border: 2px solid rgb(0, 0, 0);
-  width: 145px;
-  height: 50px;
+  width: 90px;
+  height: 44px;
   text-transform: uppercase;
   background-color: transparent;
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), border-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1), cursor 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .catalog-btn {
+    font-size: 16px;
+    width: 145px;
+    height: 50px;
+  }
 }
 .catalog-btn:hover {
   background-color: rgb(0, 0, 0);
@@ -471,9 +504,8 @@ body {
 
 .catalog-text {
   padding-top: 80px;
-  padding-right: 53px;
-  padding-left: 50px;
   text-align: center;
+  padding-bottom: 5px;
 }
 @media screen and (min-width: 1200px) {
   .catalog-text {
@@ -487,18 +519,27 @@ body {
 .title-catalog-two {
   color: rgb(0, 0, 0);
   font-family: Oswald;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
-  line-height: 40px;
+  line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 7px;
+  margin-bottom: 17px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .title-catalog-two {
+    font-size: 50px;
+    line-height: 50px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .title-catalog-two {
     margin-left: 0px;
     margin-right: 0px;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 7px;
   }
 }
 
@@ -547,19 +588,30 @@ body {
 .title-catalog-three {
   color: rgb(0, 0, 0);
   font-family: Oswald;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
-  line-height: 60px;
+  line-height: 50px;
   text-transform: uppercase;
-  margin-bottom: 7px;
+  margin-bottom: 17px;
   width: 223px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .title-catalog-three {
+    font-size: 60px;
+    line-height: 60px;
+    width: 382px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .title-catalog-three {
     margin-left: 0px;
     margin-right: 0px;
+    line-height: 60px;
+    font-size: 60px;
+    margin-bottom: 7px;
+    width: 223px;
   }
 }
 
