@@ -14,6 +14,17 @@
     align-items: center;
     flex-direction: column;
     position: relative;
+        @media screen and (min-width: 480px) {
+      width: 420px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 557px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 100%;
+    }
   }
 
   &-list {
@@ -22,22 +33,36 @@
     align-items: center;
     gap: 35px;
     width: 100%;
-    overflow: hidden;
+    // overflow: hidden;
+    overflow-x: auto;
   }
 
   &-title {
     color: rgb(0, 0, 0);
     font-family: Oswald;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 68px;
+    line-height: 30px;
     text-transform: uppercase;
     position: absolute;
-    bottom: 171px;
+    bottom: 188px;
     background-color: white;
-    padding-left: 115px;
-    padding-right: 115px;
+    // padding-left: 115px;
+    // padding-right: 115px;
+     padding-left: 30px;
+      padding-right: 30px;
     text-align: center;
+      @media screen and (min-width: 480px) {
+    font-size: 22px;
+    }
+    @media screen and (min-width: 768px) {
+       padding-left: 115px;
+    padding-right: 115px;
+    font-size: 24px;
+    }
+    @media screen and (min-width: 768px) {
+      bottom: 200px;
+    }
   }
 
   &-icon {
