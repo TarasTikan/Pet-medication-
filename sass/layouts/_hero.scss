@@ -1,14 +1,17 @@
 .hero {
   width: 100%;
-  padding-top: 204px;
-  padding-bottom: 204px;
+  padding-top: 150px;
+  padding-bottom: 150px;
   background-color: white;
   background-image: url("/img/bg-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-
+  @media screen and (min-width: 768px) {
+   padding-top: 204px;
+  padding-bottom: 204px;
+  }
   .container {
     width: 100%;
     padding-left: 15px;
@@ -16,9 +19,10 @@
     margin: 0 auto;
     display: flex;
     margin: 0 auto;
-     @media screen and (min-width: 768px){
+
+    @media screen and (min-width: 768px) {
       width: 1430px;
-     }
+    }
   }
 
   &-title {
@@ -32,11 +36,15 @@
     letter-spacing: 0%;
     text-align: center;
     text-transform: uppercase;
-    @media screen and (min-width: 768px){
-       font-size: 86px;
-    font-weight: 600;
-    line-height: 96px;
-    text-align: left;
+@media screen and (min-width: 480px) {
+   font-size: 40px;
+   line-height: 40px;
+}
+    @media screen and (min-width: 768px) {
+      font-size: 86px;
+      font-weight: 600;
+      line-height: 96px;
+      text-align: left;
     }
   }
 }
@@ -44,16 +52,16 @@
 .hero-btn {
   color: rgb(0, 0, 0);
   font-family: Oswald;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 500;
-  line-height: 27px;
+  line-height: 15px;
   letter-spacing: 0.5px;
   text-align: center;
   text-transform: uppercase;
   box-sizing: border-box;
   border: 2px solid rgb(0, 0, 0);
-  width: 175px;
-  height: 56px;
+  width: 110px;
+  height: 40px;
   background-color: transparent;
   margin-top: 48px;
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -61,6 +69,12 @@
     color 300ms cubic-bezier(0.4, 0, 0.2, 1),
     cursor 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  @media screen and (min-width: 480px) {
+    width: 175px;
+    height: 56px;
+    font-size: 18px;
+    line-height: 27px;
+  }
 
   &:hover {
     background-color: rgb(0, 0, 0);
@@ -78,18 +92,27 @@
 .container-text {
   width: 504px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+margin-left: auto;
+margin-right: auto;
   // margin-right: 109px;
-  @media screen and (min-width: 768px){
-      margin-right: 109px;
-     }
+  @media screen and (min-width: 768px) {
+    margin-left: 109px;
+    margin-right: 0;
+  }
+
   &::before,
   &::after {
     content: "";
     position: absolute;
     display: none;
     border: 2px solid rgb(0, 0, 0);
-      @media screen and (min-width: 768px){
-     display: block;
+
+    @media screen and (min-width: 768px) {
+      display: block;
     }
   }
 
@@ -112,11 +135,12 @@
 }
 
 .hero-container-img {
-  display: none;
+  // display: none;
   position: relative;
-  @media screen and (min-width:768px) {
-    display: flex;
-  }
+
+  // @media screen and (min-width:768px) {
+  //   display: block;
+  // }
 }
 
 .hero-img-one {
