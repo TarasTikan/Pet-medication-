@@ -9,8 +9,12 @@
   background-position: center;
 
   @media screen and (min-width: 768px) {
-   padding-top: 204px;
-  padding-bottom: 204px;
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 204px;
+    padding-bottom: 204px;
   }
   .container {
     width: 100%;
@@ -19,9 +23,11 @@
     margin: 0 auto;
     display: flex;
     margin: 0 auto;
-
     @media screen and (min-width: 768px) {
-      width: 1430px;
+      width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
     }
   }
 
@@ -36,14 +42,16 @@
     letter-spacing: 0%;
     text-align: center;
     text-transform: uppercase;
-@media screen and (min-width: 480px) {
-   font-size: 40px;
-   line-height: 40px;
-}
+    @media screen and (min-width: 480px) {
+      font-size: 40px;
+      line-height: 40px;
+    }
     @media screen and (min-width: 768px) {
-      font-size: 86px;
+      font-size: 60px;
       font-weight: 600;
-      line-height: 96px;
+      line-height: 65px;
+    }
+    @media screen and (min-width: 1200px) {
       text-align: left;
     }
   }
@@ -63,17 +71,31 @@
   width: 110px;
   height: 40px;
   background-color: transparent;
-  margin-top: 48px;
+  margin-top: 38px;
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
     color 300ms cubic-bezier(0.4, 0, 0.2, 1),
     cursor 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 480px) {
+    width: 140px;
+    height: 46px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 38px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 130px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @media screen and (min-width: 1200px) {
     width: 175px;
     height: 56px;
     font-size: 18px;
     line-height: 27px;
+    margin-top: 48px;
   }
 
   &:hover {
@@ -96,12 +118,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   // margin-right: 109px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 109px;
     margin-right: 0;
+    width: 400px;
+    align-items: start;
   }
 
   &::before,
@@ -111,15 +135,16 @@ margin-right: auto;
     display: none;
     border: 2px solid rgb(0, 0, 0);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       display: block;
     }
   }
 
   &::before {
     top: -21px;
-    width: 100%;
-    right: -41px;
+    width: 350px;
+    // right: -41px;
+    right: 20px;
     border-bottom: none;
     border-left: none;
   }
@@ -127,20 +152,23 @@ margin-right: auto;
   /* Вертикальна лінія праворуч */
   &::after {
     top: -21px;
-    right: -41px;
-    height: 100px;
+    // right: -41px;
+    right: 20px;
+    height: 75px;
     border-top: none;
     border-left: none;
   }
 }
 
 .hero-container-img {
-  // display: none;
+  display: none;
   position: relative;
-
-  // @media screen and (min-width:768px) {
-  //   display: block;
-  // }
+  @media screen and (min-width: 768px) {
+    margin-left: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .hero-img-one {
@@ -156,10 +184,10 @@ margin-right: auto;
 
 .hero-img-two {
   position: absolute;
-  left: 330px;
+  // left: 330px;
+  left: 239px;
   top: -130px;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-
 
   &:hover {
     transform: scale(1.2);
