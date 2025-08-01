@@ -172,22 +172,35 @@ body {
   background-position: center;
 }
 .hero .container {
-  width: 1430px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   display: flex;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .hero .container {
+    width: 1430px;
+  }
+}
 .hero-title {
   color: rgb(0, 0, 0);
   font-family: Oswald;
-  font-size: 86px;
+  font-size: 30px;
   font-weight: 600;
-  line-height: 96px;
+  line-height: 35px;
   letter-spacing: 0%;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 86px;
+    font-weight: 600;
+    line-height: 96px;
+    text-align: left;
+  }
 }
 
 .hero-btn {
@@ -222,13 +235,23 @@ body {
 .container-text {
   width: 504px;
   position: relative;
-  margin-right: 109px;
   /* Вертикальна лінія праворуч */
+}
+@media screen and (min-width: 768px) {
+  .container-text {
+    margin-right: 109px;
+  }
 }
 .container-text::before, .container-text::after {
   content: "";
   position: absolute;
+  display: none;
   border: 2px solid rgb(0, 0, 0);
+}
+@media screen and (min-width: 768px) {
+  .container-text::before, .container-text::after {
+    display: block;
+  }
 }
 .container-text::before {
   top: -21px;
@@ -246,8 +269,13 @@ body {
 }
 
 .hero-container-img {
-  display: flex;
+  display: none;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .hero-container-img {
+    display: flex;
+  }
 }
 
 .hero-img-one {
