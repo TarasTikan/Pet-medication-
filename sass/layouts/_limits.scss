@@ -6,7 +6,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-
+ @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(90.00deg, rgb(221, 235, 241), rgb(211, 229, 238) 20.708%, rgb(200, 222, 236) 35.271%, rgba(255, 255, 255, 0) 75%), url("../img/limits-min2px.jpeg");
+  }
   @media screen and (min-width: 480px) {
     padding-top: 76px;
     padding-bottom: 78px;

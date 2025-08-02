@@ -7,7 +7,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
+ @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url("../img/bg-hero-min2px.jpeg");
+  }
   @media screen and (min-width: 768px) {
     padding-top: 160px;
     padding-bottom: 160px;

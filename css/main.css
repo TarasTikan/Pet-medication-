@@ -229,6 +229,11 @@ body {
   background-size: cover;
   background-position: center;
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../img/bg-hero-min2px.jpeg");
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 160px;
@@ -817,6 +822,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .limits {
+    background-image: linear-gradient(90deg, rgb(221, 235, 241), rgb(211, 229, 238) 20.708%, rgb(200, 222, 236) 35.271%, rgba(255, 255, 255, 0) 75%), url("../img/limits-min2px.jpeg");
+  }
 }
 @media screen and (min-width: 480px) {
   .limits {
