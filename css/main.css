@@ -224,7 +224,7 @@ body {
   padding-top: 150px;
   padding-bottom: 150px;
   background-color: white;
-  background-image: url("../../img/bg-hero.jpg");
+  background-image: url("../img/bg-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -810,7 +810,7 @@ body {
 }
 
 .limits {
-  background-image: linear-gradient(90deg, rgb(221, 235, 241), rgb(211, 229, 238) 20.708%, rgb(200, 222, 236) 35.271%, rgba(255, 255, 255, 0) 75%), url("/img/limits-img.jpg");
+  background-image: linear-gradient(90deg, rgb(221, 235, 241), rgb(211, 229, 238) 20.708%, rgb(200, 222, 236) 35.271%, rgba(255, 255, 255, 0) 75%), url("../img/limits-img.jpg");
   background-position: center;
   padding-top: 55px;
   padding-bottom: 55px;
@@ -826,7 +826,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .limits {
-    background-image: linear-gradient(90deg, rgb(221, 235, 241), rgb(211, 229, 238) 20.708%, rgb(200, 222, 236) 47.271%, rgba(255, 255, 255, 0) 75%), url("/img/limits-img.jpg");
+    background-image: linear-gradient(90deg, rgb(221, 235, 241), rgb(211, 229, 238) 20.708%, rgb(200, 222, 236) 47.271%, rgba(255, 255, 255, 0) 75%), url("../img/limits-img.jpg");
     padding-top: 96px;
     padding-bottom: 78px;
   }
