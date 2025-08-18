@@ -319,15 +319,23 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  height: 100%;
   padding: 0px 21px;
   margin: 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.mob-menu-top {
+  width: 100%;
+}
+
+.mob-menu-nav-items {
+  text-align: center;
 }
 
 .close-btn {
@@ -345,10 +353,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 25px;
-}
-
-.mob-menu-nav-items {
-  text-align: center;
 }
 
 .mob-link-auth {

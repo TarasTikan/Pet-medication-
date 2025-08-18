@@ -218,11 +218,19 @@ display: none;
 & .container {
  display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
+    align-items: space-between;
+    height: 100%;
     padding: 0px 21px;
     margin: 0 auto;
     justify-content: space-between;
+}
+
+&-top {
+  width: 100%;
+}
+
+&-nav-items {
+  text-align: center;
 }
 }
 
@@ -236,10 +244,6 @@ display: none;
   display: flex;
   flex-direction: column;
   gap: 25px;
-}
-
-.mob-menu-nav-items {
-  text-align: center;
 }
 
 
