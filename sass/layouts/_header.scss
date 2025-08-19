@@ -190,13 +190,15 @@ display: none;
   background-color: rgb(255, 255, 255);
   position: fixed;
   z-index: 1;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
-  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
   &-nav-link {
    text-transform: uppercase;
   color: black;
@@ -259,5 +261,8 @@ display: none;
 }
 
 .is-hidden {
-  display: block;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0);
 }

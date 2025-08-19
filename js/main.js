@@ -6,7 +6,7 @@ const btnTogleMenu = () => {
 }
 const keyCloseMenu = (event) => {
     if (event.code === "Escape") {
-        menu.classList.toggle('is-hidden')
+        menu.classList.add('is-hidden')
     }
 }
 document.addEventListener("keyup", keyCloseMenu);
