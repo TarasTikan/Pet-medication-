@@ -196,7 +196,7 @@ display: none;
   height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
-
+  display: none;
   &-nav-link {
    text-transform: uppercase;
   color: black;
@@ -256,4 +256,8 @@ display: none;
   line-height: 21px;
   letter-spacing: 0%;
   text-decoration: none;
+}
+
+.is-hidden {
+  display: block;
 }
